@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Okami Manga Store</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<header>
+    <img src="../carro 3/img/banner.jpg">
+            
+	</header>
+	<main>
+        
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="button" id="register-btn">Register</button>
+      <button type="submit" id="login-btn">Login</button>
+    </form>
+
+    <div class="cartbutton">
+  
+      <div id="cart-items"></div>
+  
+      <button id="checkout-button">Checkout</button>
+      <button id="clear-button">Clear</button>
+      </div>
+    
+        <h2>Filter manga list</h2>
+    
+        <label for="genre-filter">Genre:</label>
+        <select id="genre-filter">
+          <option value="">All</option>
+          <option value="sports">Sports</option>
+          <option value="seinen">Seinen</option>
+          <option value="shonen">Shonen</option>
+          <option value="drama">Drama</option>
+          <option value="yaoi">Yaoi</option>
+        </select>
+    
+        <label for="price-sort">Sort by price:</label>
+        <select id="price-sort">
+          <option value="">Default</option>
+          <option value="asc">Low to high</option>
+          <option value="desc">High to low</option>
+        </select>
+    
+        <div id="manga-list"></div>
+    
+
+
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
