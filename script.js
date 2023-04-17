@@ -247,13 +247,13 @@ function updateMangaList() {
         const mangaItem = document.createElement("div");
         mangaItem.className = "manga-item";
         mangaItem.innerHTML = `
-          <img src="${manga.image}" alt="${manga.name}">
-          <h2>${manga.name}</h2>
-          <p>Price: $${manga.price}</p>
-          <p>Genre: ${manga.genre}</p>
-          <p>Age: ${manga.age}+</p>
-          <button onclick="addToCart(${manga.id})">Add to Cart</button>
-      `;
+            <img src="${manga.image}" alt="${manga.name}">
+            <h2>${manga.name}</h2>
+            <p>Price: $${manga.price}</p>
+            <p>Genre: ${manga.genre}</p>
+            <p>Age: ${manga.age}+</p>
+            <button onclick="addToCart(${manga.id})">Add to Cart</button>
+        `;
         mangaListContainer.appendChild(mangaItem);
     });
 
@@ -280,14 +280,14 @@ function updateCart() {
         cartItem.innerHTML = `
     <span>${item.name} - $${item.price}</span>
     <button onclick="removeFromCart(${item.id})">Remove</button>
-  `;
+    `;
         cartItems.appendChild(cartItem);
         cartTotal += item.price;
     });
 
     const cartTotalElement = document.createElement("div");
     cartTotalElement.innerHTML = `
-  <strong>Cart Total: $${cartTotal}</strong>
+    <strong>Cart Total: $${cartTotal}</strong>
 `;
     cartItems.appendChild(cartTotalElement);
 }
