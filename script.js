@@ -359,3 +359,15 @@ loginBtn.addEventListener("click", function () {
         alert("Invalid username or password!");
     }
 });
+const toggleCartButton = document.getElementById("toggle-cart-button");
+const cartButtonContainer = document.querySelector(".cartbutton");
+
+toggleCartButton.addEventListener("click", function () {
+    if (cartButtonContainer.style.display === "none") {
+        cartButtonContainer.style.display = "block";
+        toggleCartButton.innerText = "Hide Cart";
+    } else {
+        cartButtonContainer.style.display = "none";
+        toggleCartButton.innerText = "Show Cart";
+    }
+});
