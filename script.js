@@ -261,18 +261,9 @@ function updateMangaList() {
 }
 
 updateMangaList();
-const toggleCartButton = document.getElementById("toggle-cart-button");
-const cartItems = document.getElementById("cart-items");
 
-toggleCartButton.addEventListener("click", function() {
-  if (cartItems.style.display === "none") {
-    cartItems.style.display = "block";
-    toggleCartButton.textContent = "Hide Cart";
-  } else {
-    cartItems.style.display = "none";
-    toggleCartButton.textContent = "Show Cart";
-  }
-});
+const cartItems = document.getElementById("cart-items");
+const checkoutButton = document.getElementById("checkout-button");
 
 let cart = [];
 const savedCart = localStorage.getItem("cart");
@@ -368,4 +359,3 @@ loginBtn.addEventListener("click", function () {
         alert("Invalid username or password!");
     }
 });
-
